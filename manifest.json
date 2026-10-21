@@ -1,13 +1,19 @@
 {
   "manifest_version": 3,
   "name": "GitHub Mermaid Wide",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "GitHub の Mermaid 図に「大きく表示」ボタンを付け、図を全画面で表示する",
   "content_scripts": [
     {
       "matches": ["https://github.com/*"],
       "js": ["content.js"],
       "css": ["content.css"]
+    },
+    {
+      "matches": ["https://viewscreen.githubusercontent.com/*"],
+      "js": ["viewer.js"],
+      "css": ["viewer.css"],
+      "all_frames": true
     }
   ]
 }
