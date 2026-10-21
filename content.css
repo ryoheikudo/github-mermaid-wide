@@ -1,0 +1,8 @@
+/* 図を描いている iframe 自体を全画面にする（外側の section だと、途中の要素の高さに縛られて半分しか出ない） */
+section[data-type="mermaid"] iframe:fullscreen {
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: none !important;
+  max-height: none !important;
+  background: #fff;
+}
